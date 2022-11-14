@@ -33,6 +33,10 @@
     background-image: linear-gradient(to bottom,  #241959 , #524ff0 );
 }
 
+.main-img-p{
+    font-size: 1.7em;
+}
+
 .main-img:hover {
     rotate: 36deg;
     transition: 1s;
@@ -52,25 +56,41 @@
     color: aliceblue;
     font-size: 2.5em;
 }
-.paymethod--carousel{
+.paymethod--bg{
     background-image: linear-gradient(to top,  #241959 , #524ff0 )
 }
 
 .paymethod--img{
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 37%;
-    margin-bottom: 5%;
+    box-shadow: 2px 4px 15px #241959;
 }
+
+.paymethod--info{
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black
+}
+
+
 .icons:hover{
     rotate: -36deg;
     transition: 0.5s;
 }
 
+@media (max-width:425px) {
+    .masthead{
+        min-height: 40vh;
+    }
+    .header--nav{
+        text-align: center;
+    }
+    .main-img-p{
+        font-size: 2em;
+        color: aliceblue;
+        text-shadow: 2px 2px 2px black;
+        margin-top: 10%;
+    }
+}
 
-@media (max-width:1024px) {
+@media (min-width:426px) and (max-width:768px) {
     .masthead{
         min-height: 40vh;
     }
@@ -80,6 +100,12 @@
     .header--nav{
         text-align: center;
     }
+    .main-img-p{
+        font-size: 1em;
+        color: aliceblue;
+        margin-top: 10%;
+    }
+
     .header--nav:hover{
         text-shadow: 2px 2px 2px black;
         scale: 1.1;
@@ -89,8 +115,5 @@
     .paymethod--title{
         font-size: 2em;
     }
-    .paymethod--img{
-        width: 50%;
-        margin-left: 25%;
-    }
+
 }
