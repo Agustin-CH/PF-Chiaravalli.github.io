@@ -153,17 +153,17 @@
     text-shadow: 2px 2px 2px black;
 }
 .service--btn button{
-    padding: 10px;
-    font-size: 1.2em;
+    padding: 5px;
+    font-size: 1.1em;
     color: #777;
     background-color: transparent;
     border: solid 1px #777;
     cursor: pointer;
     border-radius: 4px;
-    overflow: hidden;
     font-weight: 700;
     transition: all 700ms ease;
 }
+
 
 .service--btn button:hover{
     animation: shadow-pulse 1000ms 1;
