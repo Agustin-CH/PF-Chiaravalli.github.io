@@ -121,3 +121,129 @@
     }
 
 }
+
+.service--btn button{
+    padding: 10px;
+    font-size: 1.2em;
+    color: #777;
+    background-color: transparent;
+    border: solid #777;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: 700;
+    transition: all 700ms ease;
+}
+
+.service--btn button:hover{
+    animation: shadow-pulse 1000ms 1;
+    background-color: #524ff0;
+    color: white;
+}
+
+@media (min-width:585px){
+    .service--title{
+        color: rosybrown;
+    }
+    .service--info{
+        font-size: 0.8em;
+        margin-top: 5%;
+    }
+    .service--btn{
+        margin-top: 4%;
+    }
+}
+
+@media (min-width:800px){
+    .service--title{
+        color: aquamarine;
+    }
+    .service--info{
+        font-size: 0.8em;
+        margin-top: 5%;
+    }
+    .service--btn{
+        margin-top: 15%;
+    }
+}
+
+@media (min-width:968px){
+    .service--title{
+        color: salmon;
+        font-size: calc(1vw + 2em);
+    }
+    .service--info{
+        font-size: 1.1em;
+        margin-top: 5%;
+    }
+    .service--btn{
+        margin-top: 8%;
+    }
+}
+
+@media (min-width:1224px){
+    .service--title{
+        color: seagreen;
+        font-size: calc(1vw + 2.2em);
+    }
+    .service--info{
+        font-size: 1.2em;
+        margin-top: 5%;
+    }
+    .service--btn{
+        margin-top: 13%;
+    }
+}
+
+ @media (min-width:1240px){
+    .service--title{
+        color: blue;
+        font-size: calc(1vw + 2em);
+    }
+    .service--info{
+        font-size: 1.2em;
+        margin-top: 5%;
+    }
+    .service--btn{
+        margin-top: 23%;
+    }
+}
+
+@media (min-width:1440px){
+    .service--title{
+        color: greenyellow;
+        font-size: calc(1vw + 3em);
+    }
+    .service--info{
+        font-size: 1.5em;
+    }
+    .service--btn{
+        margin-top: 14%;
+    }
+}
+
+@media (min-width:1600px){
+    .service--title{
+        color: blueviolet;
+        font-size: calc(1vw + 3em);
+    }
+    .service--info{
+        font-size: 1.5em;
+    }
+    .service--btn{
+        margin-top: 22%;
+    }
+}
+
+@media (min-width:1800px){
+    .service--title{
+        color: brown;
+        font-size: calc(1vw + 3em);
+    }
+    .service--info{
+        font-size: 1.5em;
+    }
+    .service--btn{
+        margin-top: 25%;
+    }
+}
