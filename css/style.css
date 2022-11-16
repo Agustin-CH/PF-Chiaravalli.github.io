@@ -170,3 +170,7 @@
     background-color: #524ff0;
     color: white;
 }
+
+.contact--bg{
+    background-image: linear-gradient(to bottom, #524ff0,cornflowerblue);
+}
