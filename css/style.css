@@ -130,7 +130,7 @@
 }
 
 .service--container--technical{
-    background-image: linear-gradient(to bottom,  #241959 , #524ff0 )
+    background-image: linear-gradient(to bottom,  #241959 , #524ff0 );
 }
 
 
@@ -172,5 +172,36 @@
 }
 
 .contact--bg{
-    background-image: linear-gradient(to bottom, #524ff0,cornflowerblue);
+    background-image: linear-gradient(to bottom, #524ff0, cornflowerblue);
+}
+
+.contact--tittle{
+    color: #aeacf5;
+    text-shadow: 2px 2px 2px black;
+}
+
+.contact--tittle:hover{
+    scale: 1.2;
+    transition: 1s;
+}
+
+
+.aboutUs--container:hover{
+    transform:scale(1.1);
+    background-color: #e9e5f9;
+    transition: 2s;
+
+}
+.aboutUs--title{
+    font-size: 3em;
+}
+.aboutUs--info{
+    font-size: x-large;
+    font-weight: bold;
+    color: #241959;
+}
+
+.aboutUs--img{
+    border-radius: 4px;
+    box-shadow: 2px 4px 15px cornflowerblue;
 }
