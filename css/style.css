@@ -205,3 +205,23 @@
     border-radius: 4px;
     box-shadow: 2px 4px 15px cornflowerblue;
 }
+
+
+.web-design--tittle{
+    color: #aeacf5;
+    text-shadow: 2px 2px 2px black;
+}
+.web-design--img{
+    box-shadow: 2px 4px 15px #777;
+    border-radius: 4px;
+}
+.web-design--img:hover{
+    transition: transform .2s;
+    transform: scale(1.5);
+}
+
+.review--img:hover{
+    transform: translate(30%);
+    transition: 2s;
+    
+}
