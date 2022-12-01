@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: linear-gradient(to right, #241959, #524ff0);
+}
+
+.header--nav:hover {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  scale: 1.2;
+  transition: 1s;
+}
+
+.masthead {
+  background-size: cover;
+  min-height: 60vh;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.color-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  background-image: linear-gradient(to bottom, #241959, #524ff0);
+}
+
+.main-img-p {
+  font-size: 1.7em;
+}
+
+.main-img:hover {
+  rotate: 36deg;
+  transition: 1s;
+  scale: 1.2;
+}
+
+.main-img:hover + p {
+  color: aliceblue;
+  scale: 1.2;
+  transition: 1s;
+}
+
+.paymethod {
+  background-color: #524ff0;
+}
+
+.paymethod--title {
+  color: aliceblue;
+  font-size: 2.5em;
+}
+
+.paymethod--bg {
+  background-image: linear-gradient(to top, #241959, #524ff0);
+}
+
+.paymethod--img {
+  box-shadow: 2px 4px 15px #241959;
+  border: solid slateblue;
+}
+
+.paymethod--info {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+}
+
+.paymethod--img:hover {
+  scale: 1.1;
+  transition: 1s;
+}
+
+.icons:hover {
+  rotate: -36deg;
+  transition: 0.5s;
+}
+
+@media (max-width: 425px) {
+  .masthead {
+    min-height: 40vh;
+  }
+  .header--nav {
+    text-align: center;
+  }
+  .main-img-p {
+    font-size: 2em;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 10%;
+  }
+}
+@media (min-width: 425px) and (max-width: 960px) {
+  .masthead {
+    min-height: 40vh;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .header--nav {
+    text-align: center;
+  }
+  .main-img-p {
+    font-size: 1em;
+    color: aliceblue;
+    margin-top: 10%;
+  }
+  .header--nav:hover {
+    text-shadow: 2px 2px 2px black;
+    scale: 1.1;
+    transition: 1s;
+  }
+  .paymethod--title {
+    font-size: 2em;
+  }
+}
+.service--container--prog {
+  background-image: linear-gradient(to top, #241959, #524ff0);
+}
+
+.service--container--ux {
+  background-color: #241959;
+}
+
+.service--container--technical {
+  background-image: linear-gradient(to bottom, #241959, #524ff0);
+}
+
+.service--img {
+  border-radius: 4px;
+}
+
+.service--img:hover {
+  scale: 1.05;
+  transition: 1s;
+}
+
+.service--tittle {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+}
+
+.service--info {
+  color: #aeacf5;
+  text-shadow: 2px 2px 2px black;
+}
+
+.service--btn button {
+  padding: 5px;
+  font-size: 1.1em;
+  color: #777;
+  background-color: transparent;
+  border: solid 1px #777;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
+.service--btn button:hover {
+  -webkit-animation: shadow-pulse 1000ms 1;
+          animation: shadow-pulse 1000ms 1;
+  background-color: #524ff0;
+  color: white;
+}
+
+.contact--bg {
+  background-image: linear-gradient(to bottom, #524ff0, cornflowerblue);
+}
+
+.contact--tittle {
+  color: #aeacf5;
+  text-shadow: 2px 2px 2px black;
+}
+
+.contact--tittle:hover {
+  scale: 1.2;
+  transition: 1s;
+}
+
+.aboutUs--container:hover {
+  transform: scale(1.1);
+  background-color: #e9e5f9;
+  transition: 2s;
+}
+
+.aboutUs--title {
+  font-size: 3em;
+}
+
+.aboutUs--info {
+  font-size: x-large;
+  font-weight: bold;
+  color: #241959;
+}
+
+.aboutUs--img {
+  border-radius: 4px;
+  box-shadow: 2px 4px 15px cornflowerblue;
+}
+
+.web-design--tittle {
+  color: #aeacf5;
+  text-shadow: 2px 2px 2px black;
+}
+
+.web-design--img {
+  box-shadow: 2px 4px 15px #777;
+  border-radius: 4px;
+}
+
+.web-design--img:hover {
+  transition: transform 0.2s;
+  transform: scale(1.5);
+}
+
+.review--img:hover {
+  transform: translate(30%);
+  transition: 2s;
+}/*# sourceMappingURL=main.css.map */
