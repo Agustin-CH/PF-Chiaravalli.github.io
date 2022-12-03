@@ -59,7 +59,15 @@ $text-shadow-color: 2px 2px 2px black;
         @include text-shadow-predet(1.2,1s,0);
     }
 }
-
+.gnralBtn{
+    padding: 5px;
+    font-size: 1.1em;
+    border: solid 1px #777;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all 700ms ease;
+}
 .paymethod{
     background-color: $primary-color;
 }
@@ -114,23 +122,15 @@ $text-shadow-color: 2px 2px 2px black;
     color: #aeacf5;
     text-shadow: $text-shadow-color;
 }
-.service--btn button{
-    padding: 5px;
-    font-size: 1.1em;
-    color: #777;
+.service--btn{
+    @extend .gnralBtn;
     background-color: transparent;
-    border: solid 1px #777;
-    cursor: pointer;
-    border-radius: 4px;
-    font-weight: 700;
-    transition: all 700ms ease;
-}
-
-
-.service--btn button:hover{
-    animation: shadow-pulse 1000ms 1;
-    background-color: #524ff0;
-    color: white;
+    color: gray;
+    &:hover{
+        animation: shadow-pulse 1000ms 1;
+        background-color: #524ff0;
+        color: white;
+    }
 }
 
 .contact--bg{
@@ -161,11 +161,12 @@ $text-shadow-color: 2px 2px 2px black;
     font-weight: bold;
     color: #241959;
 }
-
 .aboutUs--img{
     border-radius: 4px;
     box-shadow: 2px 4px 15px cornflowerblue;
 }
+
+
 .web-design--tittle{
     color: #aeacf5;
     text-shadow: $text-shadow-color;
@@ -175,16 +176,47 @@ $text-shadow-color: 2px 2px 2px black;
     border-radius: 4px;
 }
 .web-design--img:hover{
-    transition: transform .2s;
-    transform: scale(1.5);
+    transition: transform .5s;
+    transform: scale(1.2);
 }
 
 .review--img:hover{
-    transform: translate(30%);
-    transition: 2s;
-    
+    transform: translate(45%);
+    transition: .5s;
 }
 
+.review--btnEcommerce{
+    @extend .gnralBtn;
+    background-color: green;
+    text-decoration: none;
+    &:hover{
+        @include text-shadow-predet(1.075,.5s,10deg);
+        background-color: rgb(1, 67, 1);
+        color: antiquewhite;
+    }
+}
+
+.review--btnCommon{
+    @extend .gnralBtn;
+    background-color: red;
+    text-decoration: none;
+    &:hover{
+        @include text-shadow-predet(1.075,.5s,10deg);
+        background-color: rgb(110, 1, 1);
+        color: antiquewhite;
+    }
+}
+
+.review--btnWeb3{
+    @extend .gnralBtn;
+    background-color: gold;
+    text-decoration: none;
+    &:hover{
+        @include text-shadow-predet(1.075,.5s,-15deg);
+        background-color: goldenrod;
+        color: antiquewhite;
+    }
+}
 /* MEDIA */
 @media (max-width:425px) {
     .masthead{
