@@ -17,7 +17,7 @@ $background-color-bottom: linear-gradient(to bottom,  $secondary-color , $primar
 $background-color-top: linear-gradient(to top,  $secondary-color , $primary-color);
 $text-shadow-color: 2px 2px 2px black;
 
-/* MIXIN & EXTEND
+/* MIXIN 
 ============================================= */
 @mixin text-shadow-predet ($scale, $transition, $rotate) {
     text-shadow: $text-shadow-color;
@@ -25,7 +25,8 @@ $text-shadow-color: 2px 2px 2px black;
     transition: $transition;
     rotate: $rotate;
 }
-
+/* HEADER % FOTTER 
+============================================= */
 .header{
     background-image: $background-color-right;
     .header--nav:hover {
@@ -33,7 +34,12 @@ $text-shadow-color: 2px 2px 2px black;
         color: aliceblue;
     }
 }
+.icons:hover{
+    @include text-shadow-predet(1.1,0.5s,-36deg)
+}
 
+/* MAIN PAGE
+============================================= */
 .masthead {
     background-size: cover;
     min-height: 60vh;
@@ -91,10 +97,8 @@ $text-shadow-color: 2px 2px 2px black;
     color: aliceblue;
 }
 
-.icons:hover{
-    @include text-shadow-predet(1.1,0.5s,-36deg)
-}
-
+/* SERVICES PAGE
+============================================= */
 .service--container--prog{
     background-image: $background-color-top;
 }
@@ -132,7 +136,8 @@ $text-shadow-color: 2px 2px 2px black;
         color: white;
     }
 }
-
+/* CONTACT PAGE 
+============================================= */
 .contact--bg{
     background-image: $background-color-bottom;
 }
@@ -144,7 +149,8 @@ $text-shadow-color: 2px 2px 2px black;
          @include text-shadow-predet(1.2,1s ,0);
     }
 }
-
+/* ABOUT-US PAGE
+============================================= */
 .aboutUs--container:hover{
     @include text-shadow-predet(1.1,2s ,0);
     background-color: #629eac;
@@ -166,7 +172,8 @@ $text-shadow-color: 2px 2px 2px black;
     box-shadow: 2px 4px 15px cornflowerblue;
 }
 
-
+/* WEB-DESIGN PAGE
+============================================= */
 .web-design--tittle{
     color: #aeacf5;
     text-shadow: $text-shadow-color;
@@ -217,7 +224,8 @@ $text-shadow-color: 2px 2px 2px black;
         color: antiquewhite;
     }
 }
-/* MEDIA */
+/* MEDIA
+============================================= */
 @media (max-width:425px) {
     .masthead{
         min-height: 40vh;

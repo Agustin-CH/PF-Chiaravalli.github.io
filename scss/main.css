@@ -9,7 +9,9 @@
 ============================================= */
 /* GRADIENT BACKGROUNDS
 ============================================= */
-/* MIXIN & EXTEND
+/* MIXIN 
+============================================= */
+/* HEADER % FOTTER 
 ============================================= */
 .header {
   background-image: linear-gradient(to right, #241959, #524ff0);
@@ -22,6 +24,15 @@
   color: aliceblue;
 }
 
+.icons:hover {
+  text-shadow: 2px 2px 2px black;
+  scale: 1.1;
+  transition: 0.5s;
+  rotate: -36deg;
+}
+
+/* MAIN PAGE
+============================================= */
 .masthead {
   background-size: cover;
   min-height: 60vh;
@@ -92,13 +103,8 @@
   color: aliceblue;
 }
 
-.icons:hover {
-  text-shadow: 2px 2px 2px black;
-  scale: 1.1;
-  transition: 0.5s;
-  rotate: -36deg;
-}
-
+/* SERVICES PAGE
+============================================= */
 .service--container--prog {
   background-image: linear-gradient(to top, #241959, #524ff0);
 }
@@ -142,6 +148,8 @@
   color: white;
 }
 
+/* CONTACT PAGE 
+============================================= */
 .contact--bg {
   background-image: linear-gradient(to bottom, #241959, #524ff0);
 }
@@ -157,6 +165,8 @@
   rotate: 0;
 }
 
+/* ABOUT-US PAGE
+============================================= */
 .aboutUs--container:hover {
   text-shadow: 2px 2px 2px black;
   scale: 1.1;
@@ -187,6 +197,8 @@
   box-shadow: 2px 4px 15px cornflowerblue;
 }
 
+/* WEB-DESIGN PAGE
+============================================= */
 .web-design--tittle {
   color: #aeacf5;
   text-shadow: 2px 2px 2px black;
@@ -246,7 +258,8 @@
   color: antiquewhite;
 }
 
-/* MEDIA */
+/* MEDIA
+============================================= */
 @media (max-width: 425px) {
   .masthead {
     min-height: 40vh;
