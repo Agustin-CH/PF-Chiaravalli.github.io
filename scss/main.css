@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
+/* COLOR VARIABLES
+============================================= */
+/* GRADIENT BACKGROUNDS
+============================================= */
 .header {
   background-image: linear-gradient(to right, #241959, #524ff0);
 }
-
-.header--nav:hover {
+.header .header--nav:hover {
   color: aliceblue;
   text-shadow: 2px 2px 2px black;
   scale: 1.2;
   transition: 1s;
+  rotate: 0;
 }
 
 .masthead {
@@ -30,21 +34,22 @@
 .main {
   background-image: linear-gradient(to bottom, #241959, #524ff0);
 }
-
-.main-img-p {
+.main .main-img:hover {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  scale: 1.2;
+  transition: 1s;
+  rotate: 36deg;
+}
+.main .main-img-p {
   font-size: 1.7em;
 }
-
-.main-img:hover {
-  rotate: 36deg;
-  transition: 1s;
-  scale: 1.2;
-}
-
-.main-img:hover + p {
+.main .main-img:hover + p {
   color: aliceblue;
+  text-shadow: 2px 2px 2px black;
   scale: 1.2;
   transition: 1s;
+  rotate: 0;
 }
 
 .paymethod {
@@ -64,20 +69,24 @@
   box-shadow: 2px 4px 15px #241959;
   border: solid slateblue;
 }
+.paymethod--img:hover {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  scale: 1.1;
+  transition: 1s;
+  rotate: 0;
+}
 
 .paymethod--info {
   color: aliceblue;
-  text-shadow: 2px 2px 2px black;
-}
-
-.paymethod--img:hover {
-  scale: 1.1;
-  transition: 1s;
 }
 
 .icons:hover {
-  rotate: -36deg;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  scale: 1.1;
   transition: 0.5s;
+  rotate: -36deg;
 }
 
 @media (max-width: 425px) {
@@ -90,7 +99,6 @@
   .main-img-p {
     font-size: 2em;
     color: aliceblue;
-    text-shadow: 2px 2px 2px black;
     margin-top: 10%;
   }
 }
@@ -110,9 +118,11 @@
     margin-top: 10%;
   }
   .header--nav:hover {
+    color: aliceblue;
     text-shadow: 2px 2px 2px black;
     scale: 1.1;
     transition: 1s;
+    rotate: 0;
   }
   .paymethod--title {
     font-size: 2em;
@@ -133,10 +143,12 @@
 .service--img {
   border-radius: 4px;
 }
-
 .service--img:hover {
-  scale: 1.05;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  scale: 1.1;
   transition: 1s;
+  rotate: 0;
 }
 
 .service--tittle {
@@ -169,17 +181,19 @@
 }
 
 .contact--bg {
-  background-image: linear-gradient(to bottom, #524ff0, cornflowerblue);
+  background-image: linear-gradient(to right, #241959, #524ff0);
 }
 
 .contact--tittle {
   color: #aeacf5;
   text-shadow: 2px 2px 2px black;
 }
-
 .contact--tittle:hover {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
   scale: 1.2;
   transition: 1s;
+  rotate: 0;
 }
 
 .aboutUs--container:hover {

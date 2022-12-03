@@ -4,15 +4,41 @@
     box-sizing: border-box;
     
 }
-.header{
-    background-image: linear-gradient(to right,  #241959 , #524ff0 );
+//vars
+
+
+
+/* COLOR VARIABLES
+============================================= */
+$orange: #ffa600;
+$blue: #82d2e5;
+$green:#c1d72e;
+$primary-color: #524ff0;
+$secondary-color: #241959;
+
+/* GRADIENT BACKGROUNDS
+============================================= */
+
+$background-color-right: linear-gradient(to right,  $secondary-color , $primary-color );
+$background-color-bottom: linear-gradient(to bottom,  $secondary-color , $primary-color);
+$background-color-top: linear-gradient(to top,  $secondary-color , $primary-color);
+
+$text-shadow-color: 2px 2px 2px black;
+
+
+@mixin text-shadow-predet ($scale, $transition, $rotate) {
+    color: aliceblue;
+    text-shadow: $text-shadow-color;
+    scale: $scale;
+    transition: $transition;
+    rotate: $rotate;
 }
 
-.header--nav:hover{
-    color: aliceblue;
-    text-shadow: 2px 2px 2px black;
-    scale: 1.2;
-    transition: 1s;
+.header{
+    background-image: $background-color-right;
+    .header--nav:hover {
+        @include text-shadow-predet(1.2, 1s,0);
+    }
 }
 
 .masthead {
@@ -27,56 +53,44 @@
     background-color: rgba(0, 0, 0, .2);
 }
 
-
-
 .main{
-    background-image: linear-gradient(to bottom,  #241959 , #524ff0 );
-}
-
-.main-img-p{
-    font-size: 1.7em;
-}
-
-.main-img:hover {
-    rotate: 36deg;
-    transition: 1s;
-    scale: 1.2;
-}
-
-.main-img:hover + p{
-    color: aliceblue;
-    scale: 1.2;
-    transition: 1s;
+    background-image: $background-color-bottom;
+    .main-img:hover{
+        @include text-shadow-predet(1.2,1s,36deg);
+    }
+    .main-img-p{
+        font-size: 1.7em;
+    }
+    .main-img:hover + p{
+        @include text-shadow-predet(1.2,1s,0);
+    }
 }
 
 .paymethod{
-    background-color: #524ff0;
+    background-color: $primary-color;
 }
+
 .paymethod--title{
     color: aliceblue;
     font-size: 2.5em;
 }
 .paymethod--bg{
-    background-image: linear-gradient(to top,  #241959 , #524ff0 )
+    background-image: $background-color-top;
 }
 
 .paymethod--img{
     box-shadow: 2px 4px 15px #241959;
     border: solid slateblue;
+    &:hover{
+        @include text-shadow-predet(1.1,1s,0)
+    }
 }
-
 .paymethod--info{
     color: aliceblue;
-    text-shadow: 2px 2px 2px black
 }
 
-.paymethod--img:hover{
-    scale: 1.1;
-    transition: 1s;
-}
 .icons:hover{
-    rotate: -36deg;
-    transition: 0.5s;
+    @include text-shadow-predet(1.1,0.5s,-36deg)
 }
 
 @media (max-width:425px) {
@@ -89,7 +103,6 @@
     .main-img-p{
         font-size: 2em;
         color: aliceblue;
-        text-shadow: 2px 2px 2px black;
         margin-top: 10%;
     }
 }
@@ -109,48 +122,40 @@
         color: aliceblue;
         margin-top: 10%;
     }
-
     .header--nav:hover{
-        text-shadow: 2px 2px 2px black;
-        scale: 1.1;
-        transition: 1s;
-
+        @include text-shadow-predet(1.1,1s,0)
     }
     .paymethod--title{
         font-size: 2em;
     }
-
 }
 
 .service--container--prog{
-    background-image: linear-gradient(to top,  #241959 , #524ff0 )
+    background-image: $background-color-top;
 }
 .service--container--ux{
    background-color: #241959;
 }
 
 .service--container--technical{
-    background-image: linear-gradient(to bottom,  #241959 , #524ff0 );
+    background-image: $background-color-bottom;
 }
-
 
 .service--img{
     border-radius: 4px;
-}
-
-.service--img:hover{
-    scale: 1.05;
-    transition: 1s;
+    &:hover{
+        @include text-shadow-predet(1.1,1s ,0)
+    }
 }
 
 .service--tittle{
     color: aliceblue;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: $text-shadow-color;
 }
 
 .service--info{
     color: #aeacf5;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: $text-shadow-color;
 }
 .service--btn button{
     padding: 5px;
@@ -172,19 +177,16 @@
 }
 
 .contact--bg{
-    background-image: linear-gradient(to bottom, #524ff0, cornflowerblue);
+    background-image: $background-color-right;
 }
 
 .contact--tittle{
     color: #aeacf5;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: $text-shadow-color;
+    &:hover{
+         @include text-shadow-predet(1.2,1s ,0);
+    }
 }
-
-.contact--tittle:hover{
-    scale: 1.2;
-    transition: 1s;
-}
-
 
 .aboutUs--container:hover{
     transform:scale(1.1);
@@ -209,7 +211,7 @@
 
 .web-design--tittle{
     color: #aeacf5;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: $text-shadow-color;
 }
 .web-design--img{
     box-shadow: 2px 4px 15px #777;
