@@ -14,7 +14,7 @@
 /* HEADER % FOTTER 
 ============================================= */
 .header {
-  background-image: linear-gradient(to right, #241959, #524ff0);
+  background-color: #82a7a6;
 }
 .header .header--nav:hover {
   text-shadow: 2px 2px 2px black;
@@ -35,10 +35,9 @@
 ============================================= */
 .masthead {
   background-size: cover;
-  min-height: 60vh;
+  min-height: 80vh;
   position: relative;
   color: white;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .color-overlay {
@@ -46,7 +45,7 @@
 }
 
 .main {
-  background-image: linear-gradient(to bottom, #241959, #524ff0);
+  background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
   color: aliceblue;
 }
 .main .main-img:hover {
@@ -54,9 +53,6 @@
   scale: 1.15;
   transition: 1s;
   rotate: 360deg;
-}
-.main .main-img-p {
-  font-size: 1.7em;
 }
 .main .main-img:hover + p {
   text-shadow: 2px 2px 2px black;
@@ -76,7 +72,7 @@
 }
 
 .paymethod {
-  background-color: #524ff0;
+  background-color: #82a7a6;
 }
 
 .paymethod--title {
@@ -85,12 +81,13 @@
 }
 
 .paymethod--bg {
-  background-image: linear-gradient(to top, #241959, #524ff0);
+  background-image: linear-gradient(to top, #1e4362, #82a7a6);
 }
 
 .paymethod--img {
-  box-shadow: 2px 4px 15px #241959;
-  border: solid slateblue;
+  box-shadow: 2px 4px 15px #82a7a6;
+  border-radius: 24px;
+  border: solid #1e4362;
 }
 .paymethod--img:hover {
   text-shadow: 2px 2px 2px black;
@@ -106,40 +103,45 @@
 /* SERVICES PAGE
 ============================================= */
 .service--container--prog {
-  background-image: linear-gradient(to top, #241959, #524ff0);
+  background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
 }
 
 .service--container--ux {
-  background-color: #241959;
+  background-color: #82a7a6;
 }
 
 .service--container--technical {
-  background-image: linear-gradient(to bottom, #241959, #524ff0);
+  background-image: linear-gradient(to top, #1e4362, #82a7a6);
 }
 
 .service--img {
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .service--img:hover {
   text-shadow: 2px 2px 2px black;
-  scale: 1.1;
+  scale: 1.04;
   transition: 1s;
   rotate: 0;
 }
 
+.service--content {
+  width: 30%;
+}
+
 .service--tittle {
-  color: aliceblue;
+  color: #1e4362;
   text-shadow: 2px 2px 2px black;
+  font-size: 1.5em;
 }
 
 .service--info {
-  color: #aeacf5;
+  color: whitesmoke;
   text-shadow: 2px 2px 2px black;
 }
 
 .service--btn {
   background-color: transparent;
-  color: gray;
+  color: #1e4362;
 }
 .service--btn:hover {
   -webkit-animation: shadow-pulse 1000ms 1;
@@ -151,7 +153,7 @@
 /* CONTACT PAGE 
 ============================================= */
 .contact--bg {
-  background-image: linear-gradient(to bottom, #241959, #524ff0);
+  background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
 }
 
 .contact--tittle {
@@ -268,7 +270,7 @@
     text-align: center;
   }
   .main-img-p {
-    font-size: 2em;
+    font-size: 1.5em;
     color: aliceblue;
     margin-top: 10%;
   }
@@ -283,10 +285,13 @@
   .header--nav {
     text-align: center;
   }
+  .main-img {
+    width: 90%;
+  }
   .main-img-p {
-    font-size: 1em;
-    color: aliceblue;
-    margin-top: 10%;
+    font-size: 2em;
+    color: #1e4362;
+    margin-top: 5%;
   }
   .header--nav:hover {
     text-shadow: 2px 2px 2px black;
@@ -296,5 +301,21 @@
   }
   .paymethod--title {
     font-size: 2em;
+  }
+}
+@media (min-width: 965px) {
+  h1 {
+    font-size: 2em;
+  }
+  .header--nav {
+    text-align: center;
+  }
+  .main-img {
+    width: 100%;
+  }
+  .main-img-p {
+    font-size: 2em;
+    color: #1e4362;
+    margin-top: 5%;
   }
 }/*# sourceMappingURL=main.css.map */
