@@ -61,7 +61,7 @@
   rotate: 0;
 }
 
-.gnralBtn, .review--btnWeb3, .review--btnCommon, .review--btnEcommerce, .service--btn {
+.gnralBtn, .review--btnWeb3, .review--btnCommon, .review--btnEcommerce, .services .service--btn {
   padding: 5px;
   font-size: 1.1em;
   border: solid 1px #777;
@@ -102,52 +102,49 @@
 
 /* SERVICES PAGE
 ============================================= */
-.service--container--prog {
+.services {
   background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
 }
-
-.service--container--ux {
-  background-color: #82a7a6;
+.services .service--desc {
+  height: 125px;
 }
-
-.service--container--technical {
-  background-image: linear-gradient(to top, #1e4362, #82a7a6);
+.services .service--tittle {
+  color: #1e4362;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5em;
 }
-
-.service--img {
+.services .service--info {
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+}
+.services .service--img {
   border-radius: 3px;
 }
-.service--img:hover {
+.services .service--img:hover {
   text-shadow: 2px 2px 2px black;
   scale: 1.04;
   transition: 1s;
   rotate: 0;
 }
-
-.service--content {
+.services .service--content {
   width: 30%;
 }
-
-.service--tittle {
-  color: #1e4362;
-  text-shadow: 2px 2px 2px black;
-  font-size: 1.5em;
+.services .service--content:hover {
+  rotate: 10deg;
+  transition: 0.2s;
 }
-
-.service--info {
-  color: whitesmoke;
-  text-shadow: 2px 2px 2px black;
-}
-
-.service--btn {
-  background-color: transparent;
+.services .service--btn {
+  background-color: gainsboro;
   color: #1e4362;
 }
-.service--btn:hover {
+.services .service--btn:hover {
   -webkit-animation: shadow-pulse 1000ms 1;
           animation: shadow-pulse 1000ms 1;
-  background-color: #524ff0;
+  background-color: #82a7a6;
   color: white;
+}
+.services .service--btn--disabled {
+  height: 39px;
 }
 
 /* CONTACT PAGE 
@@ -275,7 +272,7 @@
     margin-top: 10%;
   }
 }
-@media (min-width: 425px) and (max-width: 960px) {
+@media (min-width: 426px) and (max-width: 960px) {
   .masthead {
     min-height: 40vh;
   }
@@ -301,6 +298,9 @@
   }
   .paymethod--title {
     font-size: 2em;
+  }
+  .service--info {
+    font-size: 0.8em;
   }
 }
 @media (min-width: 965px) {

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../scss/main.css">
 </head>
 <body>
+  <!-- NAV -->
     <header class="header container-fluid sticky-top"> 
         <nav class="navbar navbar-expand-lg justify-content-center align-content-center">
           <div class="container-fluid">
@@ -45,118 +46,66 @@
         </nav>
     </header>
 
-    <div class="service--container--prog pt-4 container-fluid col-12">
+    <!-- SERVICES -->
+    <section class="services pt-4 container-fluid col-12">
+      <!-- Web design service -->
       <div class="row gap-0">
         <div class="col-md-4">
-          <h2 class="service--tittle">Web Design</h2>
-          <p class="service--info">Supported languages: JavaScript, PHP, Bootstrap 5, HTML, CSS, NodeJs and Angular.</p>
-          <div class="d-flex justify-content-end mb-2">
+          <article class="service--desc col-md-12 ">
+            <h2 class="service--tittle">Web Design</h2>
+            <p class="service--info">Supported languages: JavaScript, PHP, Bootstrap 5, HTML, CSS, NodeJs and Angular.</p>
+          </article>
+          <div class="col-md-12 d-flex justify-content-end mb-2">
             <a href="./services/web-design.html"><button class="service--btn">See examples</button></a>
           </div>
           <img class="service--img my-0 w-100" src="../img/services/programming.jpg" alt="web-design">
           <div class="d-flex flex-wrap justify-content-between p-2">
-            <img class="service--content" src="../img/services/file_type_js_official_icon_130509.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_php_icon_130266.svg" alt="">
-            <img class="service--content" src="../img/services/bootstrap_logo_icon_145442.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_html_icon_130541.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_css_icon_130661.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_angular_icon_130754.svg" alt="">
+            <img class="service--content" src="../img/services/icons/web/file_type_js_official_icon_130509.svg" alt="JavaScript">
+            <img class="service--content" src="../img/services/icons/web/file_type_php_icon_130266.svg" alt="PHP">
+            <img class="service--content" src="../img/services/icons/web/bootstrap_logo_icon_145442.svg" alt="Bootstrap">
+            <img class="service--content" src="../img/services/icons/web/file_type_html_icon_130541.svg" alt="Html">
+            <img class="service--content" src="../img/services/icons/web/file_type_css_icon_130661.svg" alt="Css">
+            <img class="service--content" src="../img/services/icons/web/file_type_angular_icon_130754.svg" alt="Angular">
           </div>
         </div>
+      <!-- Ux desing service -->  
         <div class="col-md-4">
-          <h2 class="service--tittle">Ux Design</h2>
-          <p class="service--info">Supported programs: Adobe XD, Sketch, Figma, Framer X and Type Scalesssssssssssss.</p>
-          <div class="d-flex justify-content-end mb-2">
-            <a href="./services/web-design.html"><button class="service--btn" disabled>Cooming soon</button></a>
+          <article class="service--desc col-md-12">
+            <h2 class="service--tittle">Ux Design</h2>
+            <p class="service--info">Supported programs: Adobe XD, Sketch, Figma and Framer X.</p>
+          </article>   
+          <div class="service--btn--disabled d-flex justify-content-end align-items-center mb-2">
+            <a href="./services/web-design.html"><button disabled>Cooming soon</button></a>
           </div>
-          <img class="service--img my-0 w-100" src="../img/services/ux.jpg" alt="programming">
+          <img class="service--img my-0 w-100" src="../img/services/ux.jpg" alt="ux-design">
           <div class="d-flex flex-wrap justify-content-between p-2">
-            <img class="service--content" src="../img/services/file_type_js_official_icon_130509.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_php_icon_130266.svg" alt="">
-            <img class="service--content" src="../img/services/bootstrap_logo_icon_145442.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_html_icon_130541.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_css_icon_130661.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_angular_icon_130754.svg" alt="">
+            <img class="service--content" src="../img/services/icons/ux/adobe_after_effects_folder_icon_133948.svg" alt="Adobe XD">
+            <img class="service--content" src="../img/services/icons/ux/sketch_original_logo_icon_146342.svg" alt="Sketch">
+            <img class="service--content" src="../img/services/icons/ux/figma_logo_icon_147289.svg" alt="Figma">
+            <img class="service--content" src="../img/services/icons/ux/framer_logo_icon_169149.svg" alt="Framer">
           </div>
         </div> 
+      <!-- Software development service -->
         <div class="col-md-4">
-          <h2 class="service--tittle">Software Development</h2>
-          <p class="service--info">Supported languages: Rust, Python, Go and C#.</p>
-          <div class="d-flex justify-content-end mb-2">
-            <a href="./services/web-design.html"><button class="service--btn" disabled>Cooming soon</button></a>
+          <article class="service--desc col-md-12">
+            <h2 class="service--tittle">Software Development</h2>
+            <p class="service--info">Supported languages: Rust, Python, Go and C#.</p>
+          </article>
+          <div class="service--btn--disabled d-flex justify-content-end align-items-center mb-2 ">
+            <a href="./services/web-design.html"><button disabled>Cooming soon</button></a>
           </div>
-          <img class="service--img my-0 w-100" src="../img/services/technical.jpg" alt="web-design">
+          <img class="service--img my-0 w-100" src="../img/services/software.jpg" alt="software-development">
           <div class="d-flex flex-wrap justify-content-between p-2">
-            <img class="service--content" src="../img/services/file_type_js_official_icon_130509.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_php_icon_130266.svg" alt="">
-            <img class="service--content" src="../img/services/bootstrap_logo_icon_145442.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_html_icon_130541.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_css_icon_130661.svg" alt="">
-            <img class="service--content" src="../img/services/file_type_angular_icon_130754.svg" alt="">
+            <img class="service--content" src="../img/services/icons/software/rust_lang_logo_icon_169776.svg" alt="Rust language">
+            <img class="service--content" src="../img/services/icons/software/python_original_logo_icon_146381.svg" alt="Python language">
+            <img class="service--content" src="../img/services/icons/software/file_type_go_gopher_icon_130571.svg" alt="Go language">
+            <img class="service--content" src="../img/services/icons/software/c_original_logo_icon_146611.svg" alt="C# language">
           </div>
         </div>              
       </div>
-    </div>
-
-<!--     <div class="service--container--prog pt-4 container-fluid">
-      <div class="row gap-0 py-2">
-        <div class="col-md-4">
-          <img class="service--img my-0 w-100" src="../img/services/programming.jpg" alt="web-design">
-        </div>   
-        <div class="col-md-8">
-          <div class="col-12">
-            <h2 class="service--tittle">Web Design</h1>
-          </div>
-          <div class="mt-4">
-            <p class="service--info">Supported languages: JavaScript, PHP, Bootstrap 5, HTML, CSS, NodeJs and Angular.</p>
-          </div>
-          <div class="d-flex justify-content-end">
-            <a href="./services/web-design.html"><button class="service--btn">See examples</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="service--container--ux container-fluid pt-4">
-      <div class="row gap-0 py-2">
-        <div class="col-md-4">
-          <img class="service--img img-fluid w-100" src="../img/services/ux.jpg" alt="programming">
-        </div>
-        
-        <div class="col-md-8">
-          <div class="col-12">
-            <h2 class="service--tittle">Ux Design</h1>
-          </div>
-          <div class="mt-4">
-            <p class="service--info">Supported programs: Adobe XD, Sketch, Figma, Framer X and Type Scale.</p>
-          </div>
-          <div class="d-flex justify-content-end">
-            <a href="./services_webs/web_design.html"><button disabled>Coming soon</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="service--container--technical container-fluid pt-4">
-      <div class="row gap-0 py-2">
-        <div class="col-md-4">
-          <img class="service--img img-fluid w-100" src="../img/services/technical.jpg" alt="software">
-        </div>
-        <div class="col-md-8">
-          <div class="col-12">
-            <h2 class="service--tittle">Software Development</h1>
-          </div>
-          <div class="mt-4">
-            <p class="service--info">Supported languages: Rust, Python, Go and C# .</p>
-          </div>
-          <div class="d-flex justify-content-end">
-            <a href="./services_webs/web_design.html"><button disabled>Coming soon</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
- -->
-
+    </section> 
+      
+    <!-- FOOTER -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center pt-4 px-4">
         <div class="col-md-4 mb-2 d-flex">
           <span class="text-muted">© 2022 Service Tech, Inc</span>
