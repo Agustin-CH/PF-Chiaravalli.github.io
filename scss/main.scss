@@ -25,6 +25,7 @@ $text-shadow-color: 2px 2px 2px black;
     transition: $transition;
     rotate: $rotate;
 }
+
 /* HEADER % FOTTER 
 ============================================= */
 .header{
@@ -62,6 +63,7 @@ $text-shadow-color: 2px 2px 2px black;
         @include text-shadow-predet(1.2,1s,0);
     }
 }
+
 .gnralBtn{
     padding: 5px;
     font-size: 1.1em;
@@ -71,6 +73,7 @@ $text-shadow-color: 2px 2px 2px black;
     font-weight: 700;
     transition: all 700ms ease;
 }
+
 .paymethod{
     background-color: $primary-color;
     .paymethod--title{
@@ -136,42 +139,6 @@ $text-shadow-color: 2px 2px 2px black;
     .service--btn--disabled{
         height: 39px;
     }
-}
-
-/* CONTACT PAGE 
-============================================= */
-.contact--bg{
-    background-image: $background-color-bottom;
-}
-
-.contact--title{
-    color: #aeacf5;
-    text-shadow: $text-shadow-color;
-    &:hover{
-         @include text-shadow-predet(1.2,1s ,0);
-    }
-}
-/* ABOUT-US PAGE
-============================================= */
-.aboutUs--container:hover{
-    @include text-shadow-predet(1.1,2s ,0);
-    background-color: #629eac;
-    p{
-        @include text-shadow-predet(1.05,2s ,0);
-        color: white;
-    }
-}
-.aboutUs--title{
-    font-size: 3em;
-}
-.aboutUs--info{
-    font-size: x-large;
-    font-weight: bold;
-    color: #241959;
-}
-.aboutUs--img{
-    border-radius: 4px;
-    box-shadow: 2px 4px 15px cornflowerblue;
 }
 
 /* WEB-DESIGN PAGE
@@ -247,6 +214,46 @@ $text-shadow-color: 2px 2px 2px black;
     
 }
 
+/* CONTACT PAGE 
+============================================= */
+.contact{
+    background-image: $background-color-bottom;
+    .contact--title{
+        color: $secondary-color;
+        text-shadow: $text-shadow-color;
+        &:hover{
+             @include text-shadow-predet(1.1,1s ,0);
+        }
+    }
+}
+
+/* ABOUT-US PAGE
+============================================= */
+.aboutUs{
+    background-image: $background-color-bottom;
+    .aboutUs--title{
+        font-size: 3em;
+        color: white;
+        text-shadow: $text-shadow-color;
+    }
+    .aboutUs--container:hover{
+        @include text-shadow-predet(1.1,2s ,0);
+        p{
+            @include text-shadow-predet(1.025,2s ,0);
+            color: $primary-color;
+        }
+    }
+    .aboutUs--info{
+        font-size: x-large;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    .aboutUs--img{
+        border-radius: 4px;
+        box-shadow: 2px 4px 15px $secondary-color;
+    }
+    
+}
 
 /* MEDIA
 ============================================= */

@@ -143,55 +143,6 @@
   height: 39px;
 }
 
-/* CONTACT PAGE 
-============================================= */
-.contact--bg {
-  background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
-}
-
-.contact--title {
-  color: #aeacf5;
-  text-shadow: 2px 2px 2px black;
-}
-.contact--title:hover {
-  text-shadow: 2px 2px 2px black;
-  scale: 1.2;
-  transition: 1s;
-  rotate: 0;
-}
-
-/* ABOUT-US PAGE
-============================================= */
-.aboutUs--container:hover {
-  text-shadow: 2px 2px 2px black;
-  scale: 1.1;
-  transition: 2s;
-  rotate: 0;
-  background-color: #629eac;
-}
-.aboutUs--container:hover p {
-  text-shadow: 2px 2px 2px black;
-  scale: 1.05;
-  transition: 2s;
-  rotate: 0;
-  color: white;
-}
-
-.aboutUs--title {
-  font-size: 3em;
-}
-
-.aboutUs--info {
-  font-size: x-large;
-  font-weight: bold;
-  color: #241959;
-}
-
-.aboutUs--img {
-  border-radius: 4px;
-  box-shadow: 2px 4px 15px cornflowerblue;
-}
-
 /* WEB-DESIGN PAGE
 ============================================= */
 .webDesign {
@@ -269,6 +220,55 @@
   rotate: -10deg;
   background-color: goldenrod;
   color: antiquewhite;
+}
+
+/* CONTACT PAGE 
+============================================= */
+.contact {
+  background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
+}
+.contact .contact--title {
+  color: #1e4362;
+  text-shadow: 2px 2px 2px black;
+}
+.contact .contact--title:hover {
+  text-shadow: 2px 2px 2px black;
+  scale: 1.1;
+  transition: 1s;
+  rotate: 0;
+}
+
+/* ABOUT-US PAGE
+============================================= */
+.aboutUs {
+  background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
+}
+.aboutUs .aboutUs--title {
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.aboutUs .aboutUs--container:hover {
+  text-shadow: 2px 2px 2px black;
+  scale: 1.1;
+  transition: 2s;
+  rotate: 0;
+}
+.aboutUs .aboutUs--container:hover p {
+  text-shadow: 2px 2px 2px black;
+  scale: 1.025;
+  transition: 2s;
+  rotate: 0;
+  color: #82a7a6;
+}
+.aboutUs .aboutUs--info {
+  font-size: x-large;
+  font-weight: bold;
+  color: #1e4362;
+}
+.aboutUs .aboutUs--img {
+  border-radius: 4px;
+  box-shadow: 2px 4px 15px #1e4362;
 }
 
 /* MEDIA
