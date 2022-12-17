@@ -61,7 +61,7 @@
   rotate: 0;
 }
 
-.gnralBtn, .review--btnWeb3, .review--btnCommon, .review--btnEcommerce, .services .service--btn {
+.gnralBtn, .review .review--btnWeb3, .review .review--btnCommon, .review .review--btnEcommerce, .services .service--btn {
   padding: 5px;
   font-size: 1.1em;
   border: solid 1px #777;
@@ -74,29 +74,25 @@
 .paymethod {
   background-color: #82a7a6;
 }
-
-.paymethod--title {
+.paymethod .paymethod--title {
   color: aliceblue;
   font-size: 2.5em;
 }
-
-.paymethod--bg {
+.paymethod .paymethod--bg {
   background-image: linear-gradient(to top, #1e4362, #82a7a6);
 }
-
-.paymethod--img {
+.paymethod .paymethod--img {
   box-shadow: 2px 4px 15px #82a7a6;
   border-radius: 24px;
   border: solid #1e4362;
 }
-.paymethod--img:hover {
+.paymethod .paymethod--img:hover {
   text-shadow: 2px 2px 2px black;
   scale: 1.1;
   transition: 1s;
   rotate: 0;
 }
-
-.paymethod--info {
+.paymethod .paymethod--info {
   color: aliceblue;
 }
 
@@ -108,7 +104,7 @@
 .services .service--desc {
   height: 125px;
 }
-.services .service--tittle {
+.services .service--title {
   color: #1e4362;
   text-shadow: 2px 2px 2px black;
   font-size: 1.5em;
@@ -153,11 +149,11 @@
   background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
 }
 
-.contact--tittle {
+.contact--title {
   color: #aeacf5;
   text-shadow: 2px 2px 2px black;
 }
-.contact--tittle:hover {
+.contact--title:hover {
   text-shadow: 2px 2px 2px black;
   scale: 1.2;
   transition: 1s;
@@ -198,61 +194,79 @@
 
 /* WEB-DESIGN PAGE
 ============================================= */
-.web-design--tittle {
-  color: #aeacf5;
+.webDesign {
+  background-image: linear-gradient(to bottom, #1e4362, #82a7a6);
+}
+.webDesign .webDesign--title {
+  color: #1e4362;
   text-shadow: 2px 2px 2px black;
 }
-
-.web-design--img {
+.webDesign .webDesign--img {
   box-shadow: 2px 4px 15px #777;
   border-radius: 4px;
 }
-
-.web-design--img:hover {
+.webDesign .webDesign--img:hover {
   transition: transform 0.5s;
   transform: scale(1.2);
 }
 
-.review--img:hover {
+.review {
+  background-image: linear-gradient(to top, #1e4362, #82a7a6);
+}
+.review .review--title {
+  color: #1e4362;
+  text-shadow: 2px 2px 2px black;
+  scale: 1.02;
+  transition: 1s;
+  rotate: 0;
+}
+.review .review--container:hover .review--img {
   transform: translate(45%);
   transition: 0.5s;
 }
-
-.review--btnEcommerce {
+.review .review--container:hover p {
+  text-shadow: 2px 2px 2px black;
+  scale: 1.02;
+  transition: 1s;
+  rotate: 0;
+  color: #82a7a6;
+}
+.review .review--btnEcommerce {
   background-color: green;
   text-decoration: none;
+  border: transparent;
 }
-.review--btnEcommerce:hover {
+.review .review--btnEcommerce:hover {
   text-shadow: 2px 2px 2px black;
   scale: 1.075;
   transition: 0.5s;
-  rotate: 10deg;
+  rotate: 8deg;
   background-color: rgb(1, 67, 1);
   color: antiquewhite;
 }
-
-.review--btnCommon {
+.review .review--btnCommon {
   background-color: red;
   text-decoration: none;
+  border: transparent;
 }
-.review--btnCommon:hover {
+.review .review--btnCommon:hover {
   text-shadow: 2px 2px 2px black;
   scale: 1.075;
   transition: 0.5s;
-  rotate: 10deg;
+  rotate: 2deg;
   background-color: rgb(110, 1, 1);
   color: antiquewhite;
 }
-
-.review--btnWeb3 {
+.review .review--btnWeb3 {
   background-color: gold;
   text-decoration: none;
+  border: transparent;
 }
-.review--btnWeb3:hover {
+.review .review--btnWeb3:hover {
   text-shadow: 2px 2px 2px black;
   scale: 1.075;
   transition: 0.5s;
-  rotate: -15deg;
+  rotate: -10deg;
   background-color: goldenrod;
   color: antiquewhite;
 }
