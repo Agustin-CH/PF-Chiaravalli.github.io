@@ -1,0 +1,46 @@
+@import "colors_mixins";
+
+/* SERVICES PAGE
+============================================= */
+.services{
+    background-image: $background-color-bottom;
+    .service--desc{
+        height: 125px;
+    }
+    .service--title{
+        color: $secondary-color;
+        text-shadow: $text-shadow-color;
+        font-size: 1.5em;
+    }
+    
+    .service--info{
+        color: whitesmoke;
+        text-shadow: $text-shadow-color;
+    }
+    .service--img{
+        border-radius: 3px;
+        &:hover{
+            @include text-shadow-predet(1.04,1s ,0)
+        }
+    }
+    .service--content{
+        width: 30%;
+        &:hover{
+            rotate: 10deg;
+            transition: 0.2s;
+        }
+    }
+    .service--btn{
+        @extend .gnralBtn;
+        background-color: gainsboro;
+        color: $secondary-color;
+        &:hover{
+            animation: shadow-pulse 1000ms 1;
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+    .service--btn--disabled{
+        height: 39px;
+    }
+}

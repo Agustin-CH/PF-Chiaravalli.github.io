@@ -1,0 +1,14 @@
+@import "colors_mixins";
+/* HEADER % FOTTER 
+============================================= */
+.header{
+    background-color: $primary-color;
+    .header--nav:hover {
+        @include text-shadow-predet(1.2, 1s,0);
+        color: aliceblue;
+    }
+}
+
+.icons:hover{
+    @include text-shadow-predet(1.1,0.5s,-36deg)
+}

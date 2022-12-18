@@ -1,0 +1,14 @@
+@import "colors_mixins";
+
+/* CONTACT PAGE 
+============================================= */
+.contact{
+    background-image: $background-color-bottom;
+    .contact--title{
+        color: $secondary-color;
+        text-shadow: $text-shadow-color;
+        &:hover{
+             @include text-shadow-predet(1.1,1s ,0);
+        }
+    }
+}

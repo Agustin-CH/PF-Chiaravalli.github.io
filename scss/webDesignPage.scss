@@ -1,0 +1,74 @@
+@import "colors_mixins";
+
+/* WEB-DESIGN PAGE
+============================================= */
+
+.webDesign{
+    background-image: $background-color-bottom;
+    .webDesign--title{
+        color: $secondary-color;
+        text-shadow: $text-shadow-color;
+    }
+    .webDesign--img{
+        box-shadow: 2px 4px 15px #777;
+        border-radius: 4px;
+        &:hover{
+            transition: transform .5s;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.review{
+    background-image: $background-color-top;
+    .review--title{
+        color: $secondary-color;
+        @include text-shadow-predet(1.02,1s,0);
+    }
+    .review--container:hover{
+        .review--img{
+            transform: translate(45%);
+            transition: .5s; 
+        }
+        p{
+            @include text-shadow-predet(1.02,1s,0);
+            color: $primary-color;
+        }
+    }
+    .review--btnEcommerce{
+        @extend .gnralBtn;
+        background-color: green;
+        text-decoration: none;
+        border: transparent;
+        &:hover{
+            @include text-shadow-predet(1.075,.5s,8deg);
+            background-color: rgb(1, 67, 1);
+            color: antiquewhite;
+        }
+    }
+    
+    .review--btnCommon{
+        @extend .gnralBtn;
+        background-color: red;
+        text-decoration: none;
+        border: transparent;
+        &:hover{
+            @include text-shadow-predet(1.075,.5s,2deg);
+            background-color: rgb(110, 1, 1);
+            color: antiquewhite;
+        }
+    }
+    
+    .review--btnWeb3{
+        @extend .gnralBtn;
+        background-color: gold;
+        text-decoration: none;
+        border: transparent;
+        &:hover{
+            @include text-shadow-predet(1.075,.5s,-10deg);
+            background-color: goldenrod;
+            color: antiquewhite;
+        }
+    }
+    
+}

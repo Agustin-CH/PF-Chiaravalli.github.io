@@ -1,0 +1,22 @@
+/* COLOR VARIABLES
+============================================= */
+$primary-color:#82a7a6 ;
+$secondary-color: #1e4362;
+$terciary-color: #1b4f8b;
+
+/* GRADIENT BACKGROUNDS
+============================================= */
+
+$background-color-right: linear-gradient(to right,  $secondary-color , $primary-color );
+$background-color-bottom: linear-gradient(to bottom,  $secondary-color , $primary-color);
+$background-color-top: linear-gradient(to top,  $secondary-color , $primary-color);
+$text-shadow-color: 2px 2px 2px black;
+
+/* MIXIN 
+============================================= */
+@mixin text-shadow-predet ($scale, $transition, $rotate) {
+    text-shadow: $text-shadow-color;
+    scale: $scale;
+    transition: $transition;
+    rotate: $rotate;
+}
