@@ -37,37 +37,29 @@
     }
     .review--btnEcommerce{
         @extend .gnralBtn;
-        background-color: green;
+        background-color: #444;
         text-decoration: none;
         border: transparent;
         &:hover{
-            @include text-shadow-predet(1.075,.5s,8deg);
-            background-color: rgb(1, 67, 1);
-            color: antiquewhite;
+            @include hoverBtnEffect(0.08em,antiquewhite,#6eff3e,0 0 35px #6eff3e);
+            @include text-shadow-predet(1.075,.5s,0);
         }
     }
     
     .review--btnCommon{
         @extend .gnralBtn;
-        background-color: red;
-        text-decoration: none;
-        border: transparent;
+        @extend .review--btnEcommerce;
         &:hover{
-            @include text-shadow-predet(1.075,.5s,2deg);
-            background-color: rgb(110, 1, 1);
-            color: antiquewhite;
+            @include hoverBtnEffect(0.08em,antiquewhite,#ff1867,0 0 35px #ff1867);
+            @include text-shadow-predet(1.075,.5s,0);
         }
     }
-    
     .review--btnWeb3{
         @extend .gnralBtn;
-        background-color: gold;
-        text-decoration: none;
-        border: transparent;
+        @extend .review--btnEcommerce;
         &:hover{
-            @include text-shadow-predet(1.075,.5s,-10deg);
-            background-color: goldenrod;
-            color: antiquewhite;
+            @include hoverBtnEffect(0.08em,antiquewhite,#1e9bff,0 0 35px #1e9bff);
+            @include text-shadow-predet(1.075,.5s,0);
         }
     }
     

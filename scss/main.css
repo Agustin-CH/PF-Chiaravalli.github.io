@@ -11,12 +11,34 @@
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .review .review--btnWeb3, .review .review--btnCommon, .review .review--btnEcommerce, .services .service--btn {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* COLOR VARIABLES
 ============================================= */
 /* GRADIENT BACKGROUNDS
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .review .review--btnWeb3, .review .review--btnCommon, .review .review--btnEcommerce, .services .service--btn {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* MAIN PAGE
 ============================================= */
 .masthead {
@@ -45,16 +67,10 @@
   scale: 1.2;
   transition: 1s;
   rotate: 0;
+  color: orange;
 }
-
-.gnralBtn, .review .review--btnWeb3, .review .review--btnCommon, .review .review--btnEcommerce, .services .service--btn {
-  padding: 5px;
-  font-size: 1.1em;
-  border: solid 1px #777;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: 700;
-  transition: all 700ms ease;
+.main .main-img-p {
+  font-size: 1.2em;
 }
 
 .paymethod {
@@ -88,6 +104,17 @@
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .review .review--btnWeb3, .review .review--btnCommon, .review .review--btnEcommerce, .services .service--btn {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* HEADER % FOTTER 
 ============================================= */
 .header {
@@ -114,6 +141,17 @@
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .review .review--btnWeb3, .review .review--btnCommon, .review .review--btnEcommerce, .services .service--btn {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* SERVICES PAGE
 ============================================= */
 .services {
@@ -123,7 +161,7 @@
   height: 125px;
 }
 .services .service--title {
-  color: #1e4362;
+  color: rgb(33, 157, 252);
   text-shadow: 2px 2px 2px black;
   font-size: 1.5em;
 }
@@ -148,14 +186,15 @@
   transition: 0.2s;
 }
 .services .service--btn {
-  background-color: gainsboro;
-  color: #1e4362;
+  background-color: #444;
+  border: transparent;
+  color: black;
 }
 .services .service--btn:hover {
-  -webkit-animation: shadow-pulse 1000ms 1;
-          animation: shadow-pulse 1000ms 1;
-  background-color: #82a7a6;
-  color: white;
+  letter-spacing: 0.08em;
+  color: black;
+  background: #1efff0;
+  box-shadow: 0 0 35px #1efff0;
 }
 .services .service--btn--disabled {
   height: 39px;
@@ -167,6 +206,17 @@
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .review .review--btnWeb3, .review .review--btnCommon, .review .review--btnEcommerce, .services .service--btn {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* WEB-DESIGN PAGE
 ============================================= */
 .webDesign {
@@ -206,44 +256,40 @@
   rotate: 0;
   color: #82a7a6;
 }
-.review .review--btnEcommerce {
-  background-color: green;
+.review .review--btnEcommerce, .review .review--btnWeb3, .review .review--btnCommon {
+  background-color: #444;
   text-decoration: none;
   border: transparent;
 }
-.review .review--btnEcommerce:hover {
+.review .review--btnEcommerce:hover, .review .review--btnWeb3:hover, .review .review--btnCommon:hover {
+  letter-spacing: 0.08em;
+  color: antiquewhite;
+  background: #6eff3e;
+  box-shadow: 0 0 35px #6eff3e;
   text-shadow: 2px 2px 2px black;
   scale: 1.075;
   transition: 0.5s;
-  rotate: 8deg;
-  background-color: rgb(1, 67, 1);
-  color: antiquewhite;
-}
-.review .review--btnCommon {
-  background-color: red;
-  text-decoration: none;
-  border: transparent;
+  rotate: 0;
 }
 .review .review--btnCommon:hover {
+  letter-spacing: 0.08em;
+  color: antiquewhite;
+  background: #ff1867;
+  box-shadow: 0 0 35px #ff1867;
   text-shadow: 2px 2px 2px black;
   scale: 1.075;
   transition: 0.5s;
-  rotate: 2deg;
-  background-color: rgb(110, 1, 1);
-  color: antiquewhite;
-}
-.review .review--btnWeb3 {
-  background-color: gold;
-  text-decoration: none;
-  border: transparent;
+  rotate: 0;
 }
 .review .review--btnWeb3:hover {
+  letter-spacing: 0.08em;
+  color: antiquewhite;
+  background: #1e9bff;
+  box-shadow: 0 0 35px #1e9bff;
   text-shadow: 2px 2px 2px black;
   scale: 1.075;
   transition: 0.5s;
-  rotate: -10deg;
-  background-color: goldenrod;
-  color: antiquewhite;
+  rotate: 0;
 }
 
 /* COLOR VARIABLES
@@ -252,6 +298,17 @@
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .services .service--btn, .review .review--btnEcommerce, .review .review--btnCommon, .review .review--btnWeb3 {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* CONTACT PAGE 
 ============================================= */
 .contact {
@@ -274,6 +331,17 @@
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .services .service--btn, .review .review--btnEcommerce, .review .review--btnCommon, .review .review--btnWeb3 {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* ABOUT-US PAGE
 ============================================= */
 .aboutUs {
@@ -281,7 +349,7 @@
 }
 .aboutUs .aboutUs--title {
   font-size: 3em;
-  color: white;
+  color: #82a7a6;
   text-shadow: 2px 2px 2px black;
 }
 .aboutUs .aboutUs--container:hover {
@@ -295,12 +363,12 @@
   scale: 1.025;
   transition: 2s;
   rotate: 0;
-  color: #82a7a6;
+  word-spacing: 0.1em;
 }
 .aboutUs .aboutUs--info {
   font-size: x-large;
   font-weight: bold;
-  color: #1e4362;
+  color: whitesmoke;
 }
 .aboutUs .aboutUs--img {
   border-radius: 4px;
@@ -313,6 +381,17 @@
 ============================================= */
 /* MIXIN 
 ============================================= */
+/* BUTTON 
+============================================ */
+.gnralBtn, .services .service--btn, .review .review--btnEcommerce, .review .review--btnCommon, .review .review--btnWeb3 {
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 700ms ease;
+}
+
 /* MEDIA
 ============================================= */
 @media (max-width: 425px) {

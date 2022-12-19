@@ -6,20 +6,20 @@
     background-image: $background-color-bottom;
     .aboutUs--title{
         font-size: 3em;
-        color: white;
+        color: $primary-color;
         text-shadow: $text-shadow-color;
     }
     .aboutUs--container:hover{
         @include text-shadow-predet(1.1,2s ,0);
         p{
             @include text-shadow-predet(1.025,2s ,0);
-            color: $primary-color;
+            word-spacing: 0.1em;
         }
     }
     .aboutUs--info{
         font-size: x-large;
         font-weight: bold;
-        color: $secondary-color;
+        color: whitesmoke;
     }
     .aboutUs--img{
         border-radius: 4px;

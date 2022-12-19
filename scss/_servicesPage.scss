@@ -8,7 +8,7 @@
         height: 125px;
     }
     .service--title{
-        color: $secondary-color;
+        color: rgb(33, 157, 252);
         text-shadow: $text-shadow-color;
         font-size: 1.5em;
     }
@@ -32,12 +32,11 @@
     }
     .service--btn{
         @extend .gnralBtn;
-        background-color: gainsboro;
-        color: $secondary-color;
+        background-color: #444;
+        border: transparent;
+        color: black;
         &:hover{
-            animation: shadow-pulse 1000ms 1;
-            background-color: $primary-color;
-            color: white;
+            @include hoverBtnEffect(0.08em,black,#1efff0,0 0 35px #1efff0);
         }
     }
     .service--btn--disabled{
