@@ -1,4 +1,4 @@
-@import "colors_mixins";
+@import "colorsMixins";
 
 /* MEDIA
 ============================================= */
@@ -10,8 +10,8 @@
         text-align: center;
     }
     .main-img-p{
-        font-size: 1.5em;
-        color: aliceblue;
+        font-size: 1.1em;
+        color: $secondary-color;
         margin-top: 10%;
     }
 }
@@ -26,21 +26,20 @@
     .header--nav{
         text-align: center;
     }
-    .main-img{
-        width: 90%;
-    }
-    .main-img-p{
-        font-size: 2em;
+    .main p {
         color: $secondary-color;
+        font-size: 1em;
         margin-top: 5%;
     }
     .header--nav:hover{
-        @include text-shadow-predet(1.1,1s,0)
+        @include text-shadow-predet(1.1,1s,0);
     }
-    .paymethod--title{
-        font-size: 2em;
+    .paymethod h2{
+        font-size: 1.8em;
     }
-
+    .paymethod--info{
+        font-size: 0.78em;
+    }
     .service--info{
         font-size: 0.8em;
     }

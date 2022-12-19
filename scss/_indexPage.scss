@@ -1,4 +1,4 @@
-@import "colors_mixins";
+@import "colorsMixins";
 
 /* MAIN PAGE
 ============================================= */
@@ -16,38 +16,83 @@
 .main{
     background-image: $background-color-bottom;
     color: aliceblue;
-    .main-img:hover{
+    .main--img:hover{
         @include text-shadow-predet(1.15,1s,360deg);
     }
-    .main-img:hover + p{
+    .main--img:hover + p{
         @include text-shadow-predet(1.2,1s,0);
         color: orange;
     }
-    .main-img-p{
-        font-size: 1.2em;
+    p{
+        font-size: 1.5em;
+        color: $secondary-color;
     }
 }
 
-
-
 .paymethod{
     background-color: $primary-color;
-    .paymethod--title{
+    h2{
         color: aliceblue;
         font-size: 2.5em;
     }
     .paymethod--bg{
         background-image: $background-color-top;
     }
-    .paymethod--img{
+    .paymethod--img--bank{
         box-shadow: 2px 4px 15px $primary-color;
         border-radius: 24px;
         border: solid $secondary-color;
         &:hover{
-            @include text-shadow-predet(1.1,1s,0)
+            @include text-shadow-predet(1.1,1s,0);
+            border: solid greenyellow;
+            box-shadow: 2px 4px 15px greenyellow;
+        }
+        &:hover + p {
+            @include text-shadow-predet(1.1,1s,0);
+            color: greenyellow;
+        }
+        &:hover + p + p {
+            @include text-shadow-predet(1.1,1s,0);
+            color: greenyellow;
         }
     }
+
+    .paymethod--img--crypto{
+        @extend .paymethod--img--bank;
+        &:hover{
+            @include text-shadow-predet(1.1,1s,0);
+            border: solid #1efff0;
+            box-shadow: 2px 4px 15px #1efff0;
+        }
+        &:hover + p {
+            @include text-shadow-predet(1.1,1s,0);
+            color: #1efff0;
+        }
+        &:hover + p + p {
+            @include text-shadow-predet(1.1,1s,0);
+            color: #1efff0;
+        }
+    }
+
+    .paymethod--img--credit{
+        @extend .paymethod--img--bank;
+        &:hover{
+            @include text-shadow-predet(1.1,1s,0);
+            border: solid red;
+            box-shadow: 2px 4px 15px red;
+        }
+        &:hover + p {
+            @include text-shadow-predet(1.1,1s,0);
+            color: red;
+        }
+        &:hover + p + p {
+            @include text-shadow-predet(1.1,1s,0);
+            color:red;
+        }
+    }
+
     .paymethod--info{
         color: aliceblue;
+        text-shadow: $text-shadow-color;
     }    
 }
